@@ -16,3 +16,4 @@ g++ -std=c++20 path/to/source -lfmt
 - CV Qualifiers i.e _const, mutable, volatile_
 - Storage Duration -i.r _static, register, extern_
 - Pointer memeber dereference operator i.e `->`
+- Specialization - Compiler-generated code for a template with a particular type.
