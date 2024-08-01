@@ -14,6 +14,9 @@ template <typename T> T maxof(T a, T b) { return a > b ? a : b; }
 int main(int argc, char **argv) {
   int num1{684};
   int num2{76};
-  auto result = maxof(num1, num2);
+  auto result = maxof<int>(num1, num2); 
+  // The result is the same without the type. 
+  // The compiler will deduce the type via
+  // Template Argument Deduction.
   cout << format("{} is the greatest value.", result) << endl;
 }
